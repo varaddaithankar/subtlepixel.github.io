@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- 
+          Website built by Aryan Raj Sinha
+          mail - arajsinha.ars@gmail.com
+          ig - @aryan_be_the_player
+          This website is the property of Subtle Pixels Inc.
+      -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <meta name="description" content="Subtle Pixel is a digital creative agency that imagines, designs and develops unique brand identities and tailor-made digital solutions for cultural and corporate projects.">
+      <meta name="keywords" content="Subtle pixel, brand identity, UI/UX design, video editing, graphic design, photography, front end, content writing">
+      
+      <meta property="og:title" content="Subtle Pixel : Digital Creative Agency" />
+      <meta property="og:url" content="https://subtlepixeldesigns.in/" />
+      <meta property="og:image" itemprop="image" content="https://subtlepixeldesigns.in/logospwhitebg.png">
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Subtle Pixel" />
+
+      <meta name="msapplication-TileImage" content="logospwhitebg.png"> <!-- Windows 8 -->
+      <meta name="msapplication-TileColor" content="#0f0f0f"/> <!-- Windows 8 color -->
+      <!--[if IE]><link rel="shortcut icon" href="images/favicons/favicon.ico"><![endif]-->
+      
+      <meta name="application-name" content="Subtle Pixel">
+      
+      <link rel="icon" type="image/png" href="mainfavicon.png">
+      <meta name="theme-color" content="#0f0f0f" />
+      
+
+
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Catalog - Subtle Pixel</title>
+      <link rel="stylesheet" href="style.css">
+
+      <!-- <link rel="icon" href="mainfavicon.png" type="image/png" sizes="16x16"> -->
+      <script src="t.min.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+      <!-- Slick -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+
+      <!-- icons -->
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+      <style>
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+      
+            body {
+                  background-color: #000;
+                  overflow: hidden;
+            }
+      
+            h2 {
+                  position: absolute;
+                  font-family: 'Open Sans';
+                  font-weight: 600;
+                  font-size: 12px;
+                  text-transform: uppercase;
+                  left: 50%;
+                  top: 58%;
+                  color: #fff;
+                  margin-left: -7%;
+            }
+      
+            .body {
+                  position: absolute;
+                  top: 50%;
+                  margin-left: -50px;
+                  left: 50%;
+                  animation: speeder 0.4s linear infinite;
+            }
+      
+            .body>span {
+                  height: 5px;
+                  width: 35px;
+                  background: #fff;
+                  position: absolute;
+                  top: -19px;
+                  left: 60px;
+                  border-radius: 2px 10px 1px 0;
+            }
+      
+            .base span {
+                  position: absolute;
+                  width: 0;
+                  height: 0;
+                  border-top: 6px solid transparent;
+                  border-right: 100px solid #fff;
+                  border-bottom: 6px solid transparent;
+            }
+      
+            .base span:before {
+                  content: "";
+                  height: 22px;
+                  width: 22px;
+                  border-radius: 50%;
+                  background: #fff;
+                  position: absolute;
+                  right: -110px;
+                  top: -16px;
+            }
+      
+            .base span:after {
+                  content: "";
+                  position: absolute;
+                  width: 0;
+                  height: 0;
+                  border-top: 0 solid transparent;
+                  border-right: 55px solid #fff;
+                  border-bottom: 16px solid transparent;
+                  top: -16px;
+                  right: -98px;
+            }
+      
+            .face {
+                  position: absolute;
+                  height: 12px;
+                  width: 20px;
+                  background: #fff;
+                  border-radius: 20px 20px 0 0;
+                  transform: rotate(-40deg);
+                  right: -125px;
+                  top: -15px;
+            }
+      
+            .face:after {
+                  content: "";
+                  height: 12px;
+                  width: 12px;
+                  background: #fff;
+                  right: 4px;
+                  top: 7px;
+                  position: absolute;
+                  transform: rotate(40deg);
+                  transform-origin: 50% 50%;
+                  border-radius: 0 0 0 2px;
+            }
+      
+            .body>span>span:nth-child(1),
+            .body>span>span:nth-child(2),
+            .body>span>span:nth-child(3),
+            .body>span>span:nth-child(4) {
+                  width: 30px;
+                  height: 1px;
+                  background: #fff;
+                  position: absolute;
+                  animation: fazer1 0.2s linear infinite;
+            }
+      
+            .body>span>span:nth-child(2) {
+                  top: 3px;
+                  animation: fazer2 0.4s linear infinite;
+            }
+      
+            .body>span>span:nth-child(3) {
+                  top: 1px;
+                  animation: fazer3 0.4s linear infinite;
+                  animation-delay: -1s;
+            }
+      
+            .body>span>span:nth-child(4) {
+                  top: 4px;
+                  animation: fazer4 1s linear infinite;
+                  animation-delay: -1s;
+            }
+      
+            @keyframes fazer1 {
+                  0% {
+                        left: 0;
+                  }
+      
+                  100% {
+                        left: -80px;
+                        opacity: 0;
+                  }
+            }
+      
+            @keyframes fazer2 {
+                  0% {
+                        left: 0;
+                  }
+      
+                  100% {
+                        left: -100px;
+                        opacity: 0;
+                  }
+            }
+      
+            @keyframes fazer3 {
+                  0% {
+                        left: 0;
+                  }
+      
+                  100% {
+                        left: -50px;
+                        opacity: 0;
+                  }
+            }
+      
+            @keyframes fazer4 {
+                  0% {
+                        left: 0;
+                  }
+      
+                  100% {
+                        left: -150px;
+                        opacity: 0;
+                  }
+            }
+      
+            @keyframes speeder {
+                  0% {
+                        transform: translate(2px, 1px) rotate(0deg);
+                  }
+      
+                  10% {
+                        transform: translate(-1px, -3px) rotate(-1deg);
+                  }
+      
+                  20% {
+                        transform: translate(-2px, 0px) rotate(1deg);
+                  }
+      
+                  30% {
+                        transform: translate(1px, 2px) rotate(0deg);
+                  }
+      
+                  40% {
+                        transform: translate(1px, -1px) rotate(1deg);
+                  }
+      
+                  50% {
+                        transform: translate(-1px, 3px) rotate(-1deg);
+                  }
+      
+                  60% {
+                        transform: translate(-1px, 1px) rotate(0deg);
+                  }
+      
+                  70% {
+                        transform: translate(3px, 1px) rotate(-1deg);
+                  }
+      
+                  80% {
+                        transform: translate(-2px, -1px) rotate(1deg);
+                  }
+      
+                  90% {
+                        transform: translate(2px, 1px) rotate(0deg);
+                  }
+      
+                  100% {
+                        transform: translate(1px, -2px) rotate(-1deg);
+                  }
+            }
+      
+            .longfazers {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+            }
+      
+            .longfazers span {
+                  position: absolute;
+                  height: 2px;
+                  width: 20%;
+                  background: #fff;
+            }
+      
+            .longfazers span:nth-child(1) {
+                  top: 20%;
+                  animation: lf 0.6s linear infinite;
+                  animation-delay: -5s;
+            }
+      
+            .longfazers span:nth-child(2) {
+                  top: 40%;
+                  animation: lf2 0.8s linear infinite;
+                  animation-delay: -1s;
+            }
+      
+            .longfazers span:nth-child(3) {
+                  top: 60%;
+                  animation: lf3 0.6s linear infinite;
+            }
+      
+            .longfazers span:nth-child(4) {
+                  top: 80%;
+                  animation: lf4 0.5s linear infinite;
+                  animation-delay: -3s;
+            }
+      
+            @keyframes lf {
+                  0% {
+                        left: 200%;
+                  }
+      
+                  100% {
+                        left: -200%;
+                        opacity: 0;
+                  }
+            }
+      
+            @keyframes lf2 {
+                  0% {
+                        left: 200%;
+                  }
+      
+                  100% {
+                        left: -200%;
+                        opacity: 0;
+                  }
+            }
+      
+            @keyframes lf3 {
+                  0% {
+                        left: 200%;
+                  }
+      
+                  100% {
+                        left: -100%;
+                        opacity: 0;
+                  }
+            }
+      
+            @keyframes lf4 {
+                  0% {
+                        left: 200%;
+                  }
+      
+                  100% {
+                        left: -100%;
+                        opacity: 0;
+                  }
+            }
+
+            @media(max-width: 375px)
+            {
+                  h2
+                  {
+                        margin-left: -20%;
+                  }
+            }
+
+            @media(max-width: 414px)
+            {
+                  h2
+                  {
+                        margin-left: -20%;
+                  }
+            }
+            @media(max-width: 320px)
+            {
+                  h2
+                  {
+                        margin-left: -20%;
+                  }
+            }
+            @media(max-width: 384px)
+            {
+                  h2
+                  {
+                        margin-left: -20%;
+                  }
+            }
+      </style>
+
+</head>
+<body>
+
+      <div id="loader" class="center">
+            <div class="body">
+                  <span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                  </span>
+                  <div class="base">
+                        <span></span>
+                        <div class="face"></div>
+                  </div>
+            </div>
+            <div class="longfazers">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+            </div>
+            <h2>Great content takes time to reach...</h2>
+      </div>
+
+<div id="loader" class="center"></div>
+
+      <div class="text-slider-wrapper">
+            <div class="text-slider" data-aos="fade-up" data-aos-duration="3000">
+                  <div class="text-slide"><h1>Not So <br> Subtle.</h1></div>
+                  <div class="text-slide"><h1>Yeehaw!</h1></div>
+                  <div class="text-slide"><h1>Timeless<br>Memories.</h1></div>
+                  <div class="text-slide"><h1>Nuclear.</h1></div>
+                  <div class="text-slide"><h1>Mother <br> Earth.</h1></div>
+                  <div class="text-slide"><h1>Jelly in <br> the Seas.</h1></div>
+                  <div class="text-slide"><h1>Modern <br> Sphere.</h1></div>
+                  <div class="text-slide"><h1>Yeah!</h1></div>
+                  <div class="text-slide"><h1>Mystery of <br> the Moon.</h1></div>
+                  <div class="text-slide"><h1>Go Fish.</h1></div>
+                  <div class="text-slide"><h1>Wolf.</h1></div>
+                  <div class="text-slide"><h1>Apollon Designs <br> Logo Mockup</h1></div>
+                  <div class="text-slide"><h1>Abstract.</h1></div>
+                  
+            </div>
+      </div>
+
+      <div class="slider-control">
+            <div class="prev"><button type="button"><ion-icon name="arrow-back"></ion-icon></button></div>
+            <div class="next"><button type="button"><ion-icon name="arrow-forward"></ion-icon></button></div>
+      </div>
+
+      <div class="blocks" >
+            <div class="block-1"></div>
+            <div class="block-2"></div>
+            <div class="block-3"></div>
+      </div>
+
+      <div class="overlay"></div>
+
+      <div class="image-slider" data-aos="fade-up" data-aos-duration="2000">
+            <div class="image-slide" id="one" onclick="location.href='#portfolio-item-1'" style="background: url(catalogimages/aryan/1.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="two" onclick="location.href='#portfolio-item-2'" style="background: url(catalogimages/shashwat/6.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="three" onclick="location.href='#portfolio-item-3'" style="background: url(catalogimages/praneet/17.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="four" onclick="location.href='#portfolio-item-4'" style="background: url(catalogimages/shashwat/4.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="five" onclick="location.href='#portfolio-item-5'" style="background: url(catalogimages/shashwat/5.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="six" onclick="location.href='#portfolio-item-6'" style="background: url(catalogimages/praneet/4.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="seven" onclick="location.href='#portfolio-item-7'" style="background: url(catalogimages/praneet/7.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="eight" onclick="location.href='#portfolio-item-8'" style="background: url(catalogimages/shashwat/3.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="nine" onclick="location.href='#portfolio-item-9'" style="background: url(catalogimages/shashwat/1.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="ten" onclick="location.href='#portfolio-item-10'" style="background: url(catalogimages/praneet/8.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="eleven" onclick="location.href='#portfolio-item-11'" style="background: url(catalogimages/shashwat/2.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="twelve" onclick="location.href='#portfolio-item-12'" style="background: url(catalogimages/aryan/2.png) no-repeat 50% 50%; background-size: cover;"></div>
+            <div class="image-slide" id="thirteen" onclick="location.href='#portfolio-item-13'" style="background: url(catalogimages/praneet/11.png) no-repeat 50% 50%; background-size: cover;"></div>
+            
+      </div>
+
+      <nav> 
+        <span id="brand">
+            <img src="Subtle%20pixel%20main%20text%20logo.png" style="width: 250px;height: 250px;"
+                onclick="location.href='index.html'" alt="">
+        </span> <!--damn-->
+        <span id="logo">
+            <img src="logospwhite.png" style="width: 250px;height: 250px;"
+                onclick="location.href='index.html'" alt="">
+        </span>
+      <span id="clickpic">
+            <h3>Click picture <br> to view fullscreen</h3>
+      </span>
+      </nav>
+
+
+
+
+      <!-----------------------------------------------Lightbox------------------------------------------------------------>
+
+
+      
+      <div class="portfolio-lightbox" id="portfolio-item-1">
+            <div class="portfolio-lightbox__content1">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="catalogimages/lightboxportrait/2.png" style="width: 450px; height: 550px;" alt="">
+                  <h3 class="portfolio__title">Not So Subtle - Photoshop</h3>
+            </div>
+      </div>
+      
+      <div class="portfolio-lightbox" id="portfolio-item-2">
+            <div class="portfolio-lightbox__content">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="catalogimages/lightboxlandscape/4.png" alt="">
+                  <h3 class="portfolio__title">Cowboy - Illustrator</h3>
+            </div>
+      </div>
+      
+      <div class="portfolio-lightbox" id="portfolio-item-3">
+            <div class="portfolio-lightbox__content">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="catalogimages/lightboxlandscape/6.png" alt="">
+                  <h3 class="portfolio__title">Cycle - Illustrator</h3>
+            </div>
+      </div>
+
+      <div class="portfolio-lightbox" id="portfolio-item-4">
+            <div class="portfolio-lightbox__content">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="catalogimages/lightboxlandscape/2.png" alt="">
+                  <h3 class="portfolio__title">Apocalypse - Illustrator</h3>
+            </div>
+      </div>
+
+      <div class="portfolio-lightbox" id="portfolio-item-5">
+            <div class="portfolio-lightbox__content">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="earth.webp" alt="">
+                  <h3 class="portfolio__title">Land of the Living - Illustrator</h3>
+            </div>
+      </div>
+
+      <div class="portfolio-lightbox" id="portfolio-item-6">
+            <div class="portfolio-lightbox__content">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="catalogimages/lightboxlandscape/8.png" alt="">
+                  <h3 class="portfolio__title">Jellyfish - Illustrator</h3>
+            </div>
+      </div>
+
+      <div class="portfolio-lightbox" id="portfolio-item-7">
+            <div class="portfolio-lightbox__content">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="Sphere New.webp" alt="">
+                  <h3 class="portfolio__title">Modern Sphere - Illustrator</h3>
+            </div>
+      </div>
+
+      <div class="portfolio-lightbox" id="portfolio-item-8">
+            <div class="portfolio-lightbox__content1">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="catalogimages/lightboxportrait/1.png" style="width: 450px; height: 550px;" alt="">
+                  <h3 class="portfolio__title">Graffiti - Illustrator</h3>
+            </div>
+      </div>
+
+      <div class="portfolio-lightbox" id="portfolio-item-9">
+            <div class="portfolio-lightbox__content">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="catalogimages/lightboxlandscape/1.png" alt="">
+                  <h3 class="portfolio__title">Moon Mystery - Illustrator</h3>
+            </div>
+      </div>
+
+      <div class="portfolio-lightbox" id="portfolio-item-10">
+            <div class="portfolio-lightbox__content">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="catalogimages/lightboxlandscape/7.png" alt="">
+                  <h3 class="portfolio__title">Whales - Illustrator</h3>
+            </div>
+      </div>
+
+      <div class="portfolio-lightbox" id="portfolio-item-11">
+            <div class="portfolio-lightbox__content1">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="4.webp" style="width: 450px; height: 450px;" alt="">
+                  <h3 class="portfolio__title">Lone Wolf - Illustrator</h3>
+            </div>
+      </div>
+
+      <div class="portfolio-lightbox" id="portfolio-item-12">
+            <div class="portfolio-lightbox__content">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="catalogimages/lightboxlandscape/9.png" alt="">
+                  <h3 class="portfolio__title">Apollon Brand Logo Mockup - Photoshop</h3>
+            </div>
+      </div>
+
+      <div class="portfolio-lightbox" id="portfolio-item-13">
+            <div class="portfolio-lightbox__content">
+                  <a href="#" class="close"></a>
+                  <img class="portfolio-lightbox__image" src="catalogimages/lightboxlandscape/10.png" alt="">
+                  <h3 class="portfolio__title">Abstraction - Illustrator </h3>
+            </div>
+      </div>
+
+      
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+<script src="slick.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+      AOS.init();
+</script>
+<script>
+
+
+
+var sickPrimary = {
+      autoplay: true,
+      autoplaySpeed: 2400,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      speed: 1800,
+      cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+      asNavFor: '.text-slider',
+      centerMode: true,
+      prevArrow: $('.prev'),
+      nextArrow: $('.next')
+}
+
+var sickSecondary = {
+      autoplay: true,
+      autoplaySpeed: 2400,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 1800,
+      cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+      asNavFor: '.image-slider',
+      prevArrow: $('.prev'),
+      nextArrow: $('.next')
+}
+
+$('.image-slider').slick(sickPrimary);
+$('.text-slider').slick(sickSecondary);
+
+TweenMax.from("#brand", 1, {
+                delay: 0.4,
+                y: 10,
+                opacity: 0,
+                ease: Expo.easeInOut
+            })
+
+            TweenMax.staggerFrom("#menu li a", 1, {
+                delay: 0.4,
+                opacity: 0,
+                ease: Expo.easeInOut
+            }, 0.1);
+
+</script>
+
+<script>
+      document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                  document.querySelector(
+                        "body").style.visibility = "hidden";
+                  document.querySelector(
+                        "#loader").style.visibility = "visible";
+            } else {
+                  document.querySelector(
+                        "#loader").style.display = "none";
+                  document.querySelector(
+                        "body").style.visibility = "visible";
+            }
+      }; 
+
+      
+</script>
+
+</body>
+</html>
+
+<!-- 
+    Website built by Aryan Raj Sinha
+    mail - arajsinha.ars@gmail.com
+    ig - @aryan_be_the_player
+    This website is the property of Subtle Pixels Inc.
+-->
